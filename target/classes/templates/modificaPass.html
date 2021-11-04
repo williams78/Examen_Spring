@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+<div class="container text-center">
+
+<form th:action="@{/modificaPass}" method="post" >
+<div th:if="${message != null}">
+  <p>[[${message}]]
+</div>  
+<div class="border">
+<div> <p>
+<input type="password" name="Antpassword" class ="form-control" placeholder = "Anterior Password" required autofocus />
+</p>
+<p>
+<input type="password" name="nuevopassword" class ="form-control" placeholder = "Nuevo Password" required autofocus />
+</p>
+<p>
+<input type="password" name="confpassword" class ="form-control" placeholder = "Confirma Password" required autofocus />
+</p>
+<p>
+<input type="submit" value="Guardar"/>
+</p>
+</div>
+</form>
